@@ -37,7 +37,8 @@ export default {
             width:@global-min-box-size;
             height:@global-min-box-size;
 //          background: url(./img/topbar.png) no-repeat;
-			background:#fff;
+			border-radius:1rem;
+			background:#eee;
         }
         .btn-min{
             background-position: -18px -117px;

@@ -2,10 +2,10 @@
   <div class="app">
 	<div class="my-body">
 		<div class="ly-top">
-			<div class="ly img-logo"></div>
+			<div class="ly img-y"></div>
 			<div class="ly top-menus">
 			</div>
-			<div class="ly title-bar-min-box">
+			<div class="title-bar-min-box" style="float:right;">
 				<min-bar-box></min-bar-box>
 			</div>
 		</div>
@@ -15,12 +15,7 @@
 			<div class="ly ly-left-body">
 				<online-list></online-list>
 			</div>
-			<div class="ly ly-right-top">
-				<tab-control></tab-control>
-			</div>
-			<div class="ly ly-right-body">
-				<message-box></message-box>
-			</div>
+			<Message class="ly ly-right-body" style="background:#ccc;"></Message>
 			<div class="ly ly-right-bottom">
 				<div class="top"></div>
 				<div class="bottom">
@@ -36,6 +31,7 @@ import Hello from '@/components/Hello.vue'
 import onlineList from '@/components/onlineList.vue'
 import minBarBox from '@/components/minBarBox.vue'
 import messageBox from '@/components/messageBox.vue'
+import Message from '@/components/Message.vue'
 import tabControl from '@/components/tabControl.vue'
 export default {
 	data() {
@@ -117,6 +113,7 @@ export default {
 		'min-bar-box': minBarBox,
 		'online-list': onlineList,
 		'message-box': messageBox,
+		'Message':Message,
 		'tab-control': tabControl 
 	}
 }
