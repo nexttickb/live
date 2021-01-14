@@ -1,0 +1,74 @@
+.app {
+
+	/*=S布局*/
+	.my-body{
+		padding:0;
+		margin:0;
+		background-color:@global-background-color;
+		color:@global-font-color;
+		font-size:.9em;
+		position:absolute;
+		width:100%;
+		top:0px;
+		bottom:0px;
+	}
+
+	.ly-top{
+		position:absolute;
+		top:0px;
+		left:0px;
+		right:0px;
+		height:@global-top-height;
+		background-color:@global-header-bg-color;
+		border-bottom:1px solid @global-border-color;
+	}
+	.ly-left-top{
+		top:@global-top-height + @global-box-margin;
+		left:@global-box-margin;
+		width:@global-sidebar-width;
+		height:@global-left-top-height;
+		background-color:@global-left-top-color;
+	}
+	.ly-left-body{
+		top:@global-top-height + @global-box-margin * 2 + @global-left-top-height;
+		left:@global-box-margin;
+		width:@global-sidebar-width;
+		bottom:@global-box-margin;
+		background-color:@global-left-bottom-color;
+		overflow:auto;
+	}
+	.ly-right-top{
+		top:@global-top-height + @global-box-margin;
+		left:@global-sidebar-width + @global-box-margin * 2;
+		right:@global-box-margin;
+		height:@global-right-top-height - @global-ly-right-top-botton;
+		//background-color:#ccc;
+		background-color:@global-background-color;
+		border-bottom:@global-ly-right-top-botton solid @global-tab-bg-color;
+	}
+	.ly-right-body{
+		top:@global-top-height + @global-box-margin + @global-right-top-height;
+		left:@global-sidebar-width + @global-box-margin * 2;
+		right:@global-box-margin;
+		bottom:@global-right-bottom-height + @global-box-margin * 2;
+		background-color:#fff;
+		color: #666;
+		padding:5px;
+	}
+	.ly-right-bottom{
+		height:@global-right-bottom-height;
+		left:@global-sidebar-width + @global-box-margin * 2;
+		right:@global-box-margin;
+		bottom:@global-box-margin;
+	}
+	.img-logo{
+		top:(@global-top-height - @global-logo-height)/2;
+		height:@global-logo-height;
+		width:@global-logo-width;
+		left:@global-box-margin;
+	//	background:url('./img/logo.png');
+	}
+	/*=E布局*/
+
+}
+
